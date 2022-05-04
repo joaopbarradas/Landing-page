@@ -6,6 +6,10 @@
 
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 
 .page-header {
   display: flex;
@@ -22,12 +26,86 @@
   width: 100%;
 }
 
+.top-infocard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0 96px;
+}
+
+.top-infocard-text {
+  max-width: 766px;
+}
+
+.top-infocard-subtitle {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.top-infocard-title {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.top-infocard-description {
+  margin-right: 124px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
 @media screen and (max-width: 414px) {
 
   .main-banner-desktop {
     display: none;
   }
 
+}
+
+@media screen and (max-width: 992px) {
+  .top-infocard {
+    flex-direction: column;
+    padding: 84px 30px 158px;
+  }
+
+  .top-infocard-text {
+    margin: 0 0 68px;
+  }
+
+  .top-infocard-description {
+    margin-right: 0;
+  }
+
+  .top-infocard-subtitle {
+    font-size: 20px;
+  }
+
+  .top-infocard-title {
+    font-size: 28px;
+  }
+
+  .top-infocard-image {
+    max-width: 240px;
+    width: 100%;
+
+  }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+  .top-infocard-text {
+    max-width: 520px;
+    margin-right: 70px;
+  }
 }
 
 @media screen and (min-width: 415px) {
