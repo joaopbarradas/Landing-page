@@ -22,8 +22,10 @@ body {
   display: block;
 }
 
-.main-banner {
+.main-banner,
+.middle-banner {
   width: 100%;
+  display: block;
 }
 
 .top-infocard {
@@ -68,7 +70,7 @@ body {
   grid-template-columns: repeat(3, max-content);
   gap: 20px;
   justify-content: center;
-  padding: 34px 34px 0;
+  padding: 34px 34px 74px;
   background: #F0F0F0;
 
 }
@@ -102,7 +104,8 @@ body {
 
 @media screen and (max-width: 414px) {
 
-  .main-banner-desktop {
+  .main-banner-desktop,
+  .middle-banner-desktop {
     display: none;
   }
 
@@ -166,7 +169,8 @@ body {
 
 @media screen and (min-width: 415px) {
 
-  .main-banner-mobile {
+  .main-banner-mobile,
+  .middle-banner-mobile {
     display: none;
   }
 
